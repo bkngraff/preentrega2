@@ -47,6 +47,7 @@ body {
     height: 300px;
     margin: 20px;
     padding: 20px;
+    display: inline;
 }
 
 .theweekndPosando {
@@ -122,8 +123,8 @@ h2, h3 {
     text-align: center;
 }
 
-p, .datosPersonales, div ul li {
-    font-size: 15px;
+p, .datosPersonales, ul li {
+    font-size: auto;
     font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-align: center;
     margin: 5px 0px;
