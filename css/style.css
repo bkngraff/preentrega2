@@ -1,98 +1,104 @@
-/* Reset de estilos */
+/* Reset general */
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    list-style: none;
 }
 
 /* Estilos generales */
 body {
     background-color: #F2F2F2;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #F2F2F2;
+}
+
+/* NAV */
+nav {
+    background-color: #F2F2F2;
+    z-index: 1000;
+    /* Establece un valor alto para la propiedad z-index */
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     border-bottom: #000000 solid 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: relative;
 }
 
-.list {
-    display: inline-block;
-    padding: 20px;
+@media screen and (min-width: 768px) {
+    .navbar-brand img {
+        width: 150px;
+        height: auto;
+    }
 }
 
-.busqueda a, .logo a {
-    font-family: "Druk Web", sans-serif;
-    text-decoration: none;
-    color: #000000;
-}
+/* FIN DEL NAV */
 
-.busqueda {
-    text-align: right;
-    font-size: 20px;
-}
-
-/* Galería de fotos */
-.imgG {
-    font-family: "Druk Web", sans-serif;
-    color: #000000;
-    margin: 50px;
-    font-size: 50px;
-    text-align: center;
-}
-
-.img {
-    height: 300px;
-    margin: 20px;
-    padding: 20px;
-    display: inline;
-}
-
-.theweekndPosando {
-    margin-right: 100px;
-}
 
 /* Contenido principal */
-main {
+.todo {
     text-align: center;
     margin: 20px;
     padding: 20px;
 }
 
-.mainImagenInicio {
-    background-image: url(../img/galeria/img2.jpg);
-    background-size: cover;
-    padding: 100px;
+.a {
+    text-align: center;
+    margin: 20px;
 }
 
-.historia {
-    margin-bottom: 40px;
-    font-family: "Druk Web", sans-serif;
-    color: floralwhite;
-    font-size: 50px;
+@media screen and (min-width: 768px) {
+    .iframeT {
+        width: 800px;
+        height: 500px;
+    }
 }
 
-.videoHistoria {
-    margin: 40px;
+@media screen and (max-width: 767px) {
+    .iframeT {
+        width: 100%;
+        /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        height: 300px;
+        /* Altura automática para mantener la proporción */
+    }
 }
+
+embed-responsive-16by9 {
+    max-width: 800px;
+    /* Ajusta según tus preferencias */
+    margin: 0 auto;
+    /* Centra el contenedor */
+}
+
 
 /* Pie de página */
-footer {
+footer div ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
-    border-top: #000000 solid 1px;
+}
+
+footer div ul li {
+    padding: 10px;
 }
 
 .pieDePagina {
     margin-bottom: 20px;
     font-size: 15px;
     font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    border-top: #000000 solid 1px;
+    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .redesSociales {
@@ -114,7 +120,8 @@ footer {
     width: 250px;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: "Druk Web", sans-serif;
     margin: 30px;
 }
@@ -123,13 +130,14 @@ h2, h3 {
     text-align: center;
 }
 
-p, .datosPersonales, ul li {
+p,
+.datosPersonales,
+ul li {
     font-size: auto;
     font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-align: center;
     margin: 5px 0px;
 }
-
 
 /* Discografía */
 .loreDiscografia {
@@ -149,13 +157,19 @@ p, .datosPersonales, ul li {
 form {
     display: grid;
     gap: 20px;
+    text-align: center;
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-label {
-    font-weight: bold;
-}
-
-input, textarea {
+label,
+input,
+textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -163,17 +177,16 @@ input, textarea {
     border-radius: 5px;
 }
 
-textarea {
-    resize: vertical;
-}
-
 input[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    cursor: pointer;
+    width: 50%;
+    margin: auto;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 input[type="submit"]:hover {
