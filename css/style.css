@@ -18,8 +18,6 @@ header {
 /* NAV */
 nav {
     background-color: #F2F2F2;
-    z-index: 1000;
-    /* Establece un valor alto para la propiedad z-index */
 }
 
 .content {
@@ -64,17 +62,13 @@ nav {
 @media screen and (max-width: 767px) {
     .iframeT {
         width: 100%;
-        /* Ocupa el 100% del ancho en pantallas más pequeñas */
         height: 300px;
-        /* Altura automática para mantener la proporción */
     }
 }
 
 embed-responsive-16by9 {
     max-width: 800px;
-    /* Ajusta según tus preferencias */
     margin: 0 auto;
-    /* Centra el contenedor */
 }
 
 
