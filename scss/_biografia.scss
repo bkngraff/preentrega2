@@ -1,0 +1,21 @@
+.biografia {
+    margin-bottom: 50px;
+
+    .imgBiografia {
+        height: 250px;
+        width: 250px;
+    }
+
+    h2,
+    h3 {
+        margin: 30px;
+    }
+
+    p,
+    .datosPersonales,
+    ul li {
+        @include fuentesP;
+        text-align: center;
+        margin: 5px 0;
+    }
+}

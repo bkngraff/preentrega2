@@ -1,190 +1,188 @@
-/* Reset general */
 * {
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 
-/* Estilos generales */
 body {
-    background-color: #F2F2F2;
-    margin: 0;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 700;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    background-color: #F2F2F2;
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
 }
 
-/* NAV */
 nav {
-    background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #000000 solid 1px;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #000000 solid 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  position: relative;
 }
-
 @media screen and (min-width: 768px) {
-    .navbar-brand img {
-        width: 150px;
-        height: auto;
-    }
+  .content .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
 }
 
-/* FIN DEL NAV */
-
-
-/* Contenido principal */
 .todo {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 .a {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .iframeT {
-        width: 800px;
-        height: 500px;
-    }
+  .iframeT {
+    width: 800px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .iframeT {
+    width: 100%;
+    height: 300px;
+  }
+}
+.embed-responsive-16by9 {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-    .iframeT {
-        width: 100%;
-        height: 300px;
-    }
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
 }
-
-embed-responsive-16by9 {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-/* Pie de página */
 footer div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
-
 footer div ul li {
-    padding: 10px;
+  padding: 10px;
+}
+footer .pieDePagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 0.9375rem;
+  border-top: #000000 solid 1px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+footer .redesSociales {
+  margin: 0 10px;
+}
+footer .redesSociales img {
+  width: 30px;
+  height: 30px;
 }
 
-.pieDePagina {
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    border-top: #000000 solid 1px;
-    padding-top: 30px;
-    margin-top: 30px;
-}
-
-.redesSociales {
-    margin: 0 10px;
-}
-
-.redesSociales img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Biografía */
 .biografia {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+.biografia .imgBiografia {
+  height: 250px;
+  width: 250px;
+}
+.biografia h2,
+.biografia h3 {
+  margin: 30px;
+}
+.biografia p,
+.biografia .datosPersonales,
+.biografia ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 0.9375rem;
+  text-align: center;
+  margin: 5px 0;
 }
 
-.imgBiografia {
-    height: 250px;
-    width: 250px;
-}
-
-h2,
-h3 {
-    font-family: "Druk Web", sans-serif;
-    margin: 30px;
-}
-
-.h3Cent {
-    text-align: center;
-}
-
-p,
-.datosPersonales,
-ul li {
-    font-size: auto;
-    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    text-align: center;
-    margin: 5px 0px;
-}
-
-/* Discografía */
 .loreDiscografia {
-    margin-bottom: 50px;
-}
-
-/* Tour */
-.tour {
-    margin: 50px;
+  margin-bottom: 50px;
 }
 
 .h1TitutloTour {
-    margin-bottom: 200px;
+  margin: 50px;
 }
 
-/* Contacto */
-form {
-    display: grid;
-    gap: 20px;
-    text-align: center;
-    width: 60%;
-    max-width: 500px;
-    margin: auto;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 20px;
+.contacto {
+  margin-bottom: 50px;
+}
+.contacto h2 {
+  margin: 30px;
+}
+.contacto .formularioContacto {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: auto;
+}
+.contacto .inputGroup {
+  margin-bottom: 20px;
+}
+.contacto .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 0.9375rem;
+}
+.contacto .inputGroup input[type=text],
+.contacto .inputGroup input[type=email],
+.contacto .inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 0.9375rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contacto .btnEnviar {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 0.9375rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contacto .btnEnviar:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-label,
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    width: 50%;
-    margin: auto;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* fin de contacto */
+/*# sourceMappingURL=style.css.map */

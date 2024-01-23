@@ -1,0 +1,12 @@
+* {
+    @include textnone;
+}
+
+body {
+    background-color: $color-blancoGeneral;
+    margin: 0;
+}
+
+h1 {
+    @include fuentesT;
+}

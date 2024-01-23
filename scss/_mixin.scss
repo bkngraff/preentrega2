@@ -1,0 +1,15 @@
+@mixin textnone {
+    text-decoration: none;
+    list-style: none;
+}
+
+@mixin fuentesP {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 0.9375rem;
+}
+
+@mixin fuentesT {
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-weight: 700;
+}

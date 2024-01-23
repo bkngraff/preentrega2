@@ -1,0 +1,53 @@
+.contacto {
+    margin-bottom: 50px;
+
+    h2 {
+        margin: 30px;
+    }
+
+    .formularioContacto {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .inputGroup {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            @include fuentesP;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            @include fuentesP;
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    }
+
+    .btnEnviar {
+        background-color: transparent;
+        color: $color-blanco;
+        padding: 10px 20px;
+        @include fuentesP;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba($color-negro, $shine-opacity);
+        }
+    }
+}
