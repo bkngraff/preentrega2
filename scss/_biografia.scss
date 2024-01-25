@@ -1,21 +1,61 @@
-.biografia {
-    margin-bottom: 50px;
+.main {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
 
-    .imgBiografia {
-        height: 250px;
-        width: 250px;
-    }
+        .bioContainer {
+            display: flex;
+            flex-direction: column;
 
-    h2,
-    h3 {
-        margin: 30px;
-    }
+            .image-and-details {
+                flex: 1;
+                margin-right: 20px;
 
-    p,
-    .datosPersonales,
-    ul li {
-        @include fuentesP;
-        text-align: center;
-        margin: 5px 0;
+                .details,
+                .details-right {
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    .image-and-details {
+                        flex-direction: column;
+                        margin-right: 0;
+                    }
+
+                    .details,
+                    .details-right {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .details {
+                flex: 1;
+                margin-left: 20px;
+
+                section {
+                    p.full-screen-text {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
     }
+}
+
+// Pantalla grande: Estilos para la imagen bio
+@media only screen and (min-width: 768px) {
+    .img-fluid.mb-4 {
+        width: 40%;
+    }
+}
+
+.full-screen-text {
+    font-size: 1.2rem;
+}
+
+.h2Tamaño {
+    font-size: 1.3rem;
 }

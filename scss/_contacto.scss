@@ -1,53 +1,50 @@
-.contacto {
-    margin-bottom: 50px;
+.main {
+    .container {
+        margin-top: 5rem;
 
-    h2 {
-        margin: 30px;
-    }
-
-    .formularioContacto {
-        text-align: center;
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid $border-color;
-        border-radius: 4px;
-        max-width: 400px;
-        margin: auto;
-    }
-
-    .inputGroup {
-        margin-bottom: 20px;
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            @include fuentesP;
+        h1 {
+            margin-bottom: 5rem;
         }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            @include fuentesP;
-            border: 1px solid $border-color;
-            border-radius: 4px;
-            box-sizing: border-box;
+        .contacto {
+            display: flex;
+            flex-wrap: wrap;
+
+            .mb-3 {
+                width: 50%;
+            }
+
+            .w-100 {
+                width: 100%;
+            }
+
+            .form-label {
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            .form-control {
+                width: 100%;
+            }
+
+            textarea {
+                resize: vertical;
+            }
+
+            .justify-content-center {
+                display: flex;
+                justify-content: center;
+            }
+
+            button {
+                width: 25%;
+            }
         }
     }
 
-    .btnEnviar {
-        background-color: transparent;
-        color: $color-blanco;
-        padding: 10px 20px;
-        @include fuentesP;
-        border: 1px solid $border-color;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-            background-color: rgba($color-negro, $shine-opacity);
-        }
+    .datosPersonales {
+        margin-top: 1.5rem;
+        border: 1px solid black;
+        padding: 2rem;
     }
 }

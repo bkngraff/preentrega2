@@ -10,3 +10,46 @@ body {
 h1 {
     @include fuentesT;
 }
+
+p,
+h2,
+h3 {
+    @include fuentesP;
+}
+
+h2 {
+    @include mayusculas;
+}
+
+// index //
+@media screen and (min-width: 768px) {
+    .iframeT {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .iframeT {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.embed-responsive-16by9 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+// estilo generales
+
+.todo {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.a {
+    text-align: center;
+    margin: 20px;
+}
