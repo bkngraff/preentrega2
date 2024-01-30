@@ -227,42 +227,23 @@ footer .redesSociales img {
 }
 
 .main .container {
-  margin-top: 5rem;
-}
-.main .container h1 {
-  margin-bottom: 5rem;
-}
-.main .container .contacto {
-  display: flex;
-  flex-wrap: wrap;
-}
-.main .container .contacto .mb-3 {
-  width: 50%;
-}
-.main .container .contacto .w-100 {
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .main .container .contacto .form-label {
-  display: block;
   margin-bottom: 0.5rem;
 }
-.main .container .contacto .form-control {
-  width: 100%;
+.main .container .contacto .btn-primary {
+  width: 50%;
 }
-.main .container .contacto textarea {
-  resize: vertical;
-}
-.main .container .contacto .justify-content-center {
-  display: flex;
-  justify-content: center;
-}
-.main .container .contacto button {
-  width: 25%;
-}
-.main .datosPersonales {
-  margin-top: 1.5rem;
-  border: 1px solid black;
-  padding: 2rem;
+@media only screen and (max-width: 767px) {
+  .main .container .contacto .form-label {
+    font-size: 0.9rem;
+  }
+  .main .container .contacto .btn-primary {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

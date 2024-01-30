@@ -62,37 +62,35 @@
 
     <main class="container mt-5">
         <h1 class="mb-5">Comunícate con The Weeknd: Haznos llegar tus preguntas y comentarios</h1>
-        <form class="d-flex contacto" style="flex-wrap: wrap;">
-            <div class="mb-3 w-50">
-                <label for="correoElectronico" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correoElectronico" placeholder="Correo electrónico">
-            </div>
-
-            <div class="mb-3 w-50">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-            </div>
-
-            <div class="mb-3 w-50">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-            </div>
-
-            <div class="mb-3 w-50">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
-            </div>
-
-            <div class="mb-3 w-100">
-                <label for="comentario" class="form-label">Comentario</label>
-                <textarea class="form-control " id="comentario" rows="5" placeholder="Deja un comentario"></textarea>
-            </div>
-
-            <div class="d-flex justify-content-center w-100">
-                <button type="submit" class="btn btn-primary w-25">Enviar</button>
+        <form class="contacto">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="correoElectronico" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correoElectronico" placeholder="Correo electrónico">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="comentario" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="comentario" rows="5" placeholder="Deja un comentario"></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-50">Enviar</button>
+                </div>
             </div>
         </form>
     </main>
+
 
     <footer data-aos="zoom-in">
         <!-- Información de Derechos de Autor -->
